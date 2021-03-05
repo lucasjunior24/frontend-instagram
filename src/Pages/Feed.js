@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-function App() {
+function Feed() {
     return (
         <div>
-            <h1>Hello</h1>
+            <h1>Feed</h1>
         </div>
     )
 }
 
-export default App
+export default Feed
