@@ -1,10 +1,12 @@
 import React from 'react'
 
+import LogoInstagram from '../Assets/logo.png'
+
 function HeaderNav() {
     return (
         <header>
             <nav>
-                <img alt='Logo do Instagram'/>
+                <img src={LogoInstagram} alt='Logo do Instagram'/>
                 <button>
                     Sair
                 </button>
