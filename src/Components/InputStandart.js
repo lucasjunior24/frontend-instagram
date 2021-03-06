@@ -1,10 +1,10 @@
 import React from 'react'
 
-function InputStandart(props) {
+function InputStandart({ title, typeId, type}) {
     return (
         <div className='input-field'>
-            <label htmlFor='user'>{props.title}</label>
-            <input type='text' id='user' placeholder={`Preencha o campo ${props.title.toLowerCase()} `} />
+            <label htmlFor={typeId}>{title}</label>
+            <input type={type} id={typeId} placeholder={`Preencha o campo ${title.toLowerCase()} `} />
         </div>
     )
 }
