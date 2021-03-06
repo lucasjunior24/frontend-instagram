@@ -48,3 +48,6 @@ header nav a {
 header nav a:hover {
     color: #ccc;
 }
+.nav-loggedout {
+    justify-content: center;
+}

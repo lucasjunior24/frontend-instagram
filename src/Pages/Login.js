@@ -1,13 +1,13 @@
 import React from 'react'
 
 import BottonNav from '../Components/BottonNav'
-import HeaderNav from '../Components/HeaderNav'
+import HeaderNavLoggedOf from '../Components/HeaderNavLoggedOf'
 import MainSection from '../Components/MainSection'
 
 function Login() {
     return (
         <>
-            <HeaderNav />
+            <HeaderNavLoggedOf />
             <MainSection />
             <BottonNav />
         </>
