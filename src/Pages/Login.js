@@ -2,13 +2,13 @@ import React from 'react'
 
 import BottonNavLoggedOut from '../Components/BottonNavLoggedOut'
 import HeaderNavLoggedOf from '../Components/HeaderNavLoggedOf'
-import MainSection from '../Components/MainSection'
+import LoginMainSection from '../Components/LoginMainSection'
 
 function Login() {
     return (
         <>
             <HeaderNavLoggedOf />
-            <MainSection />
+            <LoginMainSection />
             <BottonNavLoggedOut />
         </>
     )
