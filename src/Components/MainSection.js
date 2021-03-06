@@ -1,10 +1,11 @@
 import React from 'react'
+import HeroImg from '../Assets/hero-img.png'
 
 function MainSection() {
     return (
         <main>
             <div className='form-login-register'>
-                <img alt='Logo do Instagram'/>
+                <img alt='Logo do Instagram' src={HeroImg}/>
                 <form>
                     <fieldset>
                         <div className='input-field'>
