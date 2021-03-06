@@ -1,10 +1,11 @@
 import React from 'react'
+import HeaderNav from '../Components/HeaderNav'
 
 function Post() {
     return (
-        <div>
-            <h1>Post</h1>
-        </div>
+        <>
+            <HeaderNav />
+        </>
     )
 }
 

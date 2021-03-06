@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { MdExitToApp } from 'react-icons/md'
 
 import LogoInstagram from '../Assets/logo.png'
@@ -8,9 +9,9 @@ function HeaderNav() {
         <header>
             <nav>
                 <img src={LogoInstagram} alt='Logo do Instagram'/>
-                <button>
+                <Link to='/' size={20}>
                     <MdExitToApp />
-                </button>
+                </Link>
             </nav>
         </header>
     )

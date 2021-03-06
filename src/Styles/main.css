@@ -41,3 +41,10 @@ header nav {
 header nav img {
     max-height: 110%;
 }
+
+header nav a {
+    color: #333;
+}
+header nav a:hover {
+    color: #ccc;
+}

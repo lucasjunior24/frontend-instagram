@@ -1,10 +1,11 @@
 import React from 'react'
+import HeaderNav from '../Components/HeaderNav'
 
 function Feed() {
     return (
-        <div>
-            <h1>Feed</h1>
-        </div>
+        <>
+            <HeaderNav />
+        </>
     )
 }
 
