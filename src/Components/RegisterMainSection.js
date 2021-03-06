@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroImg from '../Assets/hero-img.png'
+import InputStandart from './InputStandart'
 
 function RegisterMainSection() {
     return (
@@ -9,10 +10,8 @@ function RegisterMainSection() {
                 <form>
                     <h1>Cadastrar-se</h1>
                     <fieldset>
-                        <div className='input-field'>
-                            <label htmlFor='user'>Usuário</label>
-                            <input type='text' id='user' placeholder='Usuário' />
-                        </div>
+                        <InputStandart />
+                        <InputStandart />
                         <div className='input-field'>
                             <label htmlFor='password'>Senha</label>
                             <input type='password' id='password' placeholder='Senha' />
