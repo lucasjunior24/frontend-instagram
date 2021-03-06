@@ -10,6 +10,7 @@
 body, button, input, textarea {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    color: #333;
 } 
 
 #root {
@@ -50,6 +51,20 @@ header nav a:hover {
 }
 .nav-loggedout {
     justify-content: center;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 2.25em;
+
+    background: #0095f6;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover {
+    background: #3aa5ec;
 }
 
 main {
@@ -123,6 +138,17 @@ main .form-login-register form fieldset .input-field input {
     
     font-size: 1em;
 }
-main .form-login-register form button {
-    width: 80%;
+
+
+@media (max-width: 600px) {
+    main .form-login-register {
+        grid-template-columns: 1fr;
+    }
+    main .form-login-register img {
+        justify-self: center;
+    }
+    main .form-login-register form {
+        justify-self: center;
+    }
 }
+

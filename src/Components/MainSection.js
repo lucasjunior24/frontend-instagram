@@ -10,11 +10,11 @@ function MainSection() {
                     <h1>Entrar</h1>
                     <fieldset>
                         <div className='input-field'>
-                            <label for='user'>Usuário</label>
+                            <label htmlFor='user'>Usuário</label>
                             <input type='text' id='user' placeholder='Usuário' />
                         </div>
                         <div className='input-field'>
-                            <label for='password'>Senha</label>
+                            <label htmlFor='password'>Senha</label>
                             <input type='password' id='password' placeholder='Senha' />
                         </div>
                     </fieldset>
