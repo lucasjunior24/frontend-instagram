@@ -162,6 +162,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 footer nav a {
     color: #333;
@@ -169,6 +171,27 @@ footer nav a {
 footer nav a:hover {
     color: #ccc;
 }
+
+footer nav div {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer nav div p {
+    margin-right: 0.5em;
+    font-size: 0.75em;
+}
+
+footer nav div a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+
 
 @media (max-width: 600px) {
     main .form-login-register {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import BottonNav from '../Components/BottonNav'
+import BottonNavLoggedOut from '../Components/BottonNavLoggedOut'
 import HeaderNavLoggedOf from '../Components/HeaderNavLoggedOf'
 import MainSection from '../Components/MainSection'
 
@@ -9,7 +9,7 @@ function Login() {
         <>
             <HeaderNavLoggedOf />
             <MainSection />
-            <BottonNav />
+            <BottonNavLoggedOut />
         </>
     )
 }
