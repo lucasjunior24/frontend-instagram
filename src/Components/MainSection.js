@@ -15,7 +15,7 @@ function MainSection() {
                         </div>
                         <div className='input-field'>
                             <label for='password'>Senha</label>
-                            <input type='password' id='password' placeholder='Usuário' />
+                            <input type='password' id='password' placeholder='Senha' />
                         </div>
                     </fieldset>
                     <button>Conectar</button>

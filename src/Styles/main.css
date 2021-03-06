@@ -101,7 +101,27 @@ main .form-login-register form fieldset {
     width: 80%;
     border: none;
     padding: 1em 0;
+}
+main .form-login-register form fieldset .input-field {
+    border: solid 1px #ccc;
+    border-radius: 5px;
 
+    height: 3em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+main .form-login-register form fieldset .input-field label {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 0.75em;
+}
+main .form-login-register form fieldset .input-field input {
+    border: none;
+    width: 100%;
+    margin-top: 0.5em;
+    
+    font-size: 1em;
 }
 main .form-login-register form button {
     width: 80%;
