@@ -1,12 +1,14 @@
 import React from 'react'
+import { MdHome, MdPhotoCamera, MdPerson } from 'react-icons/md'
 
 function BottonNav() {
     return (
         <footer>
             <nav>
-                <img alt='Feed' />
-                <img alt='Postar foto' />
-                <img alt='Perfil' />
+                <MdHome />
+                <MdPhotoCamera />
+                <MdPerson />
+                
             </nav>
         </footer>
     )
