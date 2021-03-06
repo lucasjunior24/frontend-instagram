@@ -7,6 +7,7 @@ function MainSection() {
             <div className='form-login-register'>
                 <img alt='Logo do Instagram' src={HeroImg}/>
                 <form>
+                    <h1>Entrar</h1>
                     <fieldset>
                         <div className='input-field'>
                             <label for='user'>Usuário</label>
