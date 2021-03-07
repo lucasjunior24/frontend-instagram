@@ -28,7 +28,12 @@ function RegisterMainSection() {
                     <h1>Cadastrar-se</h1>
                     {show  === 1?
                     <fieldset>
-                        <InputStandart type='text' typeId='user' title='Usuário'/>
+                        <InputStandart 
+                            state={username} 
+                            setState={e => setUsername(e.target.value)} 
+                            type='text' 
+                            typeId='username' 
+                            title='Usuário'/>
                         <InputStandart type='password' typeId='password' title='Senha' />
                         <InputStandart type='text' typeId='name' title='Nome' />
                     </fieldset> :
