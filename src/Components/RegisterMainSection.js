@@ -5,6 +5,10 @@ import InputStandart from './InputStandart'
 function RegisterMainSection() {
     const [show, setShow] = useState(1)
     
+    function loadFistPage(e) {
+        e.preventDefault()
+        setShow(1)
+    }
     function loadSecondPage(e) {
         e.preventDefault()
         setShow(2)
@@ -27,9 +31,20 @@ function RegisterMainSection() {
                         <InputStandart type='text' typeId='Avatar' title='Avatar' />
                     </fieldset> }
                     <div className='form-navigation'>
-                        <button>1</button>
-                        <button onClick={loadSecondPage}>2</button>
-                        <button>Finalizar</button>
+                        {show === 1 ?
+                            <button 
+                                style={{ background: '#0095f6' }}
+                                onClick={loadFistPage}>1</button> :
+                            <button onClick={loadFistPage}>1</button>}
+                        {show === 2 ?
+                            <button
+                            style={{ background: '#0095f6' }} 
+                                onClick={loadSecondPage}>2</button> :
+                            <button onClick={loadSecondPage}>2</button>}
+                         {show === 3 ?  
+                            <button
+                                style={{ background: '#0095f6' }}>Finalizar</button> :
+                            <button>Finalizar</button>}
                     </div>
                 </form>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroImg from '../Assets/hero-img.png'
+import InputStandart from './InputStandart'
 
 function MainSection() {
     return (
@@ -9,14 +10,8 @@ function MainSection() {
                 <form>
                     <h1>Entrar</h1>
                     <fieldset>
-                        <div className='input-field'>
-                            <label htmlFor='user'>Usuário</label>
-                            <input type='text' id='user' placeholder='Usuário' />
-                        </div>
-                        <div className='input-field'>
-                            <label htmlFor='password'>Senha</label>
-                            <input type='password' id='password' placeholder='Senha' />
-                        </div>
+                        <InputStandart type='text' typeId='user' title='Usuário'/>
+                        <InputStandart type='password' typeId='password' title='Senha' />
                     </fieldset>
                     <button>Conectar</button>
                 </form>
