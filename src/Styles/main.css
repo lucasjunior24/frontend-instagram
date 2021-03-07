@@ -128,7 +128,7 @@ main .form-login-register form .form-navigation button {
     width: 100%;
     background: #ccc;
 }
-main .form-login-register form .form-navigation button .submit{
+main .form-login-register form .form-navigation button.submit {
     background: #0095f6;
 }
 main .form-login-register form fieldset .input-field {

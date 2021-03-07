@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import api from '../Services/api'
+
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
 
@@ -19,6 +21,23 @@ function RegisterMainSection() {
     function loadSecondPage(e) {
         e.preventDefault()
         setShow(2)
+    }
+    async function registrationHandle(e) {
+        e.preventDefault()
+        try { 
+            await api.post('users', {
+                username, password, name, description, site, avatar
+            })
+            alert('Usuário cadastrado com sucesso!')
+            setUsername('')
+            setPassword('')
+            setName('')
+            setDescription('')
+            setSite('')
+            setAvatar('')
+         } catch(err) {
+            alert('Erro ao tentar cadastrar o usuário, tente novamente|')
+        }
     }
     return (
         <main>
@@ -79,7 +98,10 @@ function RegisterMainSection() {
                                 onClick={loadSecondPage}>2</button> :
                             <button onClick={loadSecondPage}>2</button>}
                          {avatar && site && description && name && password && username &&
-                            <button className='submit'>Finalizar</button>}
+                            <button 
+                                className='submit'
+                                onClick={registrationHandle}
+                            >Finalizar</button>}
                     </div>
                 </form>
             </div>
