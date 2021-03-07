@@ -13,11 +13,11 @@ function RegisterMainSection() {
                         <InputStandart type='text' typeId='user' title='Usuário'/>
                         <InputStandart type='password' typeId='password' title='Senha' />
                         <InputStandart type='text' typeId='name' title='Nome' />
-                        <InputStandart type='text' typeId='descricao' title='Descrição' />
-                        <InputStandart type='text' typeId='site' title='Site' />
-                        <InputStandart type='text' typeId='avatar' title='Avatar' />
                     </fieldset>
-                    <button>Conectar</button>
+                    <div className='form-navigation'>
+                        <button>Voltar</button>
+                        <button>Próximo</button>
+                    </div>
                 </form>
                 <div>Não é cadastrado ainda? <a>Cadastre-se agora!</a></div>
             </div>
