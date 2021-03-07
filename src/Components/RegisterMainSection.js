@@ -34,13 +34,38 @@ function RegisterMainSection() {
                             type='text' 
                             typeId='username' 
                             title='Usuário'/>
-                        <InputStandart type='password' typeId='password' title='Senha' />
-                        <InputStandart type='text' typeId='name' title='Nome' />
+                        <InputStandart 
+                            state={password} 
+                            setState={e => setPassword(e.target.value)}
+                            type='password' 
+                            typeId='password' 
+                            title='Senha' />
+                        <InputStandart 
+                            state={name} 
+                            setName={e => setName(e.target.value)}
+                            type='text' 
+                            typeId='name' 
+                            title='Nome' />
                     </fieldset> :
                     <fieldset>
-                        <InputStandart type='text' typeId='Descrição' title='Descrição'/>
-                        <InputStandart type='text' typeId='Site' title='Site' />
-                        <InputStandart type='text' typeId='Avatar' title='Avatar' />
+                        <InputStandart 
+                            state={description} 
+                            setState={e => setDescription(e.target.value)}
+                            type='text' 
+                            typeId='Descrição' 
+                            title='Descrição'/>
+                        <InputStandart 
+                            state={site} 
+                            setState={e => setSite(e.target.value)}
+                            type='text' 
+                            typeId='Site' 
+                            title='Site' />
+                        <InputStandart 
+                            state={avatar} 
+                            setState={e => setAvatar(e.target.value)}
+                            type='text' 
+                            typeId='Avatar' 
+                            title='Avatar' />
                     </fieldset> }
                     <div className='form-navigation'>
                         {show === 1 ?
