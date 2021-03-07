@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
 
 function RegisterMainSection() {
-    const show = 1
+    const [show, setShow] = useState(1)
+    
+    function loadSecondPage(e) {
+        e.preventDefault()
+        setShow(2)
+    }
     return (
         <main>
             <div className='form-login-register'>
@@ -23,7 +28,7 @@ function RegisterMainSection() {
                     </fieldset> }
                     <div className='form-navigation'>
                         <button>1</button>
-                        <button>2</button>
+                        <button onClick={loadSecondPage}>2</button>
                         <button>Finalizar</button>
                     </div>
                 </form>
