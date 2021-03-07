@@ -20,7 +20,6 @@ function MainSection() {
                     </fieldset>
                     <button>Conectar</button>
                 </form>
-                <div>Não é cadastrado ainda? <a>Cadastre-se agora!</a></div>
             </div>
         </main>
     )

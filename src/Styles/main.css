@@ -56,7 +56,7 @@ button {
     border: none;
     border-radius: 5px;
     font-weight: bold;
-    height: 2em;
+    height: 2.25em;
     
 
     background: #0095f6;
@@ -118,14 +118,14 @@ main .form-login-register form fieldset {
     border: none;
     padding: 1em 0;
 }
-main .form-login-register form fieldset .form-navigation {
+main .form-login-register form .form-navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr;
     grid-gap: 1em;
+    width: 80%;
 } 
-main .form-login-register form fieldset .form-navigation button {
+main .form-login-register form .form-navigation button {
     width: 100%;
-    background: #bbb;
 }
 main .form-login-register form fieldset .input-field {
     border: solid 1px #ccc;
