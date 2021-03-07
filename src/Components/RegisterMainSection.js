@@ -10,7 +10,7 @@ function RegisterMainSection() {
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
     const [site, setSite] = useState('')
-    const [avatar, setAVatar] = useState('')
+    const [avatar, setAvatar] = useState('')
 
     function loadFistPage(e) {
         e.preventDefault()
@@ -42,7 +42,7 @@ function RegisterMainSection() {
                             title='Senha' />
                         <InputStandart 
                             state={name} 
-                            setName={e => setName(e.target.value)}
+                            setState={e => setName(e.target.value)}
                             type='text' 
                             typeId='name' 
                             title='Nome' />
