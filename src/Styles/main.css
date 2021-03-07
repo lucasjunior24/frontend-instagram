@@ -212,7 +212,21 @@ footer nav div a {
     border-radius: 5px;
     margin: 2em;
 }
+.card-container .card-header {
+    padding: 1.5em;
+    max-height: 4em;
 
+    display: flex;
+    align-items: center;
+}
+.card-container .card-header img {
+    max-height: 2.5em;
+    border-radius: 1.25em;
+    margin-right: 1em;
+}
+.card-container .card-header h2 {
+    font-size: 1em;
+}
 
 @media (max-width: 600px) {
     main .form-login-register {
