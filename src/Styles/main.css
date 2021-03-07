@@ -204,6 +204,12 @@ footer nav div a {
     font-size: 0.75em;
 }
 
+h1 {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-container {
     width: 100%;
     max-width: 1000px;

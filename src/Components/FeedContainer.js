@@ -5,8 +5,7 @@ import api from '../Services/api'
 import FeedCard from './FeedCard'
 
 function FeedContainer() {
-    const [allPosts, setAllPosts] = useState([])
-    console.log(allPosts)
+    const [allPosts, setAllPosts] = useState(null)
     useEffect(() => {
         async function getAllPosts() {
             try {
@@ -22,11 +21,12 @@ function FeedContainer() {
 
     
     return (
-        <>
-            <FeedCard />
-            <FeedCard />
-            <FeedCard />
-            <FeedCard />
+        <>  
+            {allPosts === null && <h1>Carregando...</h1> }
+            {allPosts && allPosts.map(post => (
+                <FeedCard key={post._id} />
+            ))}
+           
         </>
         
     )
