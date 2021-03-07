@@ -12,7 +12,7 @@ function Feed() {
                     <h2>Perfil do Usuário</h2>
                 </div>
                 <div className='card-photo'>
-                    <img src='' alt='imagem' />
+                    <img src='https://th.bing.com/th/id/OIP.AzB5n-WC8zs5yXaOMEwueAHaE7?w=244&h=180&c=7&o=5&pid=1.7' alt='imagem' />
                 </div>
                 <div className='card-footer'>
                     <div className='card-metadata'>

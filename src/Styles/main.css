@@ -227,6 +227,17 @@ footer nav div a {
 .card-container .card-header h2 {
     font-size: 1em;
 }
+.card-container .card-photo {
+    max-height: 1000px;
+    width: 100%;
+    overflow: hidden;
+}
+.card-container .card-photo img {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
 
 @media (max-width: 600px) {
     main .form-login-register {
