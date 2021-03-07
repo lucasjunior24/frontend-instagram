@@ -78,10 +78,8 @@ function RegisterMainSection() {
                             style={{ background: '#0095f6' }} 
                                 onClick={loadSecondPage}>2</button> :
                             <button onClick={loadSecondPage}>2</button>}
-                         {show === 3 ?  
-                            <button
-                                style={{ background: '#0095f6' }}>Finalizar</button> :
-                            <button>Finalizar</button>}
+                         {avatar && site && description && name && password && username &&
+                            <button className='submit'>Finalizar</button>}
                     </div>
                 </form>
             </div>
