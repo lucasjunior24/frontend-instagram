@@ -4,7 +4,14 @@ import InputStandart from './InputStandart'
 
 function RegisterMainSection() {
     const [show, setShow] = useState(1)
-    
+
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const [name, setName] = useState('')
+    const [description, setDescription] = useState('')
+    const [site, setSite] = useState('')
+    const [avatar, setAVatar] = useState('')
+
     function loadFistPage(e) {
         e.preventDefault()
         setShow(1)
