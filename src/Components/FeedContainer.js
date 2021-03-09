@@ -22,9 +22,13 @@ function FeedContainer() {
     
     return (
         <>  
-            {allPosts === null && <h1>Carregando...</h1> }
+            {allPosts === null && <h1 className='loading-feed'>Carregando...</h1> }
             {allPosts && allPosts.map(post => (
-                <FeedCard key={post._id} />
+                <FeedCard 
+                    key={post._id} 
+                    picture={post.picture} 
+                    description={post.description}
+                    />
             ))}
            
         </>

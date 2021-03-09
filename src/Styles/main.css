@@ -29,6 +29,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    background: white;
 }
 header nav {
 
@@ -157,6 +159,7 @@ main .form-login-register form button {
 }
 
 footer {
+    background: white;
     width: 100%;
     height: 10vh;
 
@@ -165,6 +168,8 @@ footer {
     justify-content: center;
 
     border-top: solid 1px #ccc;
+    position: fixed;
+    bottom: 0;
 }
 
 footer nav {
@@ -204,7 +209,7 @@ footer nav div a {
     font-size: 0.75em;
 }
 
-h1 {
+h1.loading-feed {
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -216,7 +221,7 @@ h1 {
     background: white;
     border: solid 1px #ccc;
     border-radius: 5px;
-    margin: 2em;
+    margin: 2em 2em 3em;
 }
 .card-container .card-header {
     padding: 1.5em;
