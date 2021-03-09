@@ -3,7 +3,7 @@ import React from 'react'
 import FillHeart from '../Assets/heart-red.svg'
 import OutHeart from '../Assets/heart.svg'
 
-function FeedCard({ picture, description }) {
+function FeedCard({ picture, description, likes }) {
     return (
         <div className='card-container'>
             <div className='card-header'>
@@ -18,7 +18,7 @@ function FeedCard({ picture, description }) {
             <div className='card-footer'>
                 <div className='card-metadata'>
                     <img src={OutHeart} alt='Likes' />
-                    <h3>43 pessoas gostaram</h3>
+                    <h3>{likes.length} pessoas gostaram</h3>
                 </div>
                 <div className='card-info'>
                     <p><a href='/feed' >Nome do Usuário</a> {description}</p>
