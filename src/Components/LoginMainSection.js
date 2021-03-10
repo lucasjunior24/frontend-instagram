@@ -1,5 +1,7 @@
 import React, { useState }from 'react'
 
+import { useHistory } from 'react-router-dom'
+
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
 
@@ -10,6 +12,8 @@ function MainSection() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    const history = useHistory()
+
     async function loginHandle(e) {
         e.preventDefault()
         try { 
@@ -18,9 +22,15 @@ function MainSection() {
                 password
             })
             const { data } = response.data
+
             const userId = data._id
             const userName = data.username
-            console.log(userId, userName)
+
+            localStorage.setItem('InstagramUserId', userId)
+            localStorage.setItem('InstagramUserName', userName)
+
+            history.push('/feed')
+
         } catch(err) {
             alert('Erro ao fazer login')
         }
