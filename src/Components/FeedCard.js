@@ -19,7 +19,7 @@ function FeedCard({ picture, description, likes }) {
                 <div className='card-metadata'>
                     <img src={OutHeart} alt='Likes' />
                     {likes.length > 1 ? 
-                        <h3>{likes.length} pessoas gostaram</h3> : likes.length == 1 ?
+                        <h3>{likes.length} pessoas gostaram</h3> : likes.length === 1 ?
                         <h3>1 pessoa gostou</h3> : null  
                     }
                 </div>

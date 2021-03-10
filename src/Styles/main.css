@@ -88,6 +88,7 @@ main .form-login-register {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
+    /* padding-bottom: 4em; */
 }
 
 
@@ -159,6 +160,7 @@ main .form-login-register form button {
 }
 
 footer {
+    
     background: white;
     width: 100%;
     height: 10vh;
@@ -221,7 +223,7 @@ h1.loading-feed {
     background: white;
     border: solid 1px #ccc;
     border-radius: 5px;
-    margin: 2em 2em 3em;
+    margin: 0 2em 3em;
 }
 .card-container .card-header {
     padding: 1.5em;
@@ -283,6 +285,9 @@ h1.loading-feed {
 
 
 @media (max-width: 600px) {
+    main  {
+        margin-bottom: 15em;
+    }
     main .form-login-register {
         grid-template-columns: 1fr;
     }
@@ -291,6 +296,13 @@ h1.loading-feed {
     }
     main .form-login-register form {
         justify-self: center;
+        padding-top: 1em;
     }
 }
 
+@media (max-width: 400px) {
+    main  {
+        margin-bottom: 20em;
+    }
+    
+}

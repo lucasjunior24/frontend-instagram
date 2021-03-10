@@ -9,7 +9,7 @@ function HeaderNav() {
         <header>
             <nav>
                 <img src={LogoInstagram} alt='Logo do Instagram'/>
-                <Link to='/' size={20}>
+                <Link to='/' size={50}>
                     <MdExitToApp />
                 </Link>
             </nav>
