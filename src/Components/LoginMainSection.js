@@ -12,13 +12,15 @@ function MainSection() {
 
     async function loginHandle(e) {
         e.preventDefault()
-        alert('Foi clicado')
         try { 
             const response = await api.post('login', {
                 username, 
                 password
             })
-            console.log(response)
+            const { data } = response.data
+            const userId = data._id
+            const userName = data.username
+            console.log(userId, userName)
         } catch(err) {
             alert('Erro ao fazer login')
         }
