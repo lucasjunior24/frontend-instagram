@@ -29,6 +29,7 @@ function FeedContainer() {
                     picture={post.picture} 
                     description={post.description}
                     likes={post.likes}
+                    user={post.user}
                     />
             ))}
            

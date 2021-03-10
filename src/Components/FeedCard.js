@@ -3,12 +3,12 @@ import React from 'react'
 import FillHeart from '../Assets/heart-red.svg'
 import OutHeart from '../Assets/heart.svg'
 
-function FeedCard({ picture, description, likes }) {
+function FeedCard({ picture, description, likes, user }) {
     return (
         <div className='card-container'>
             <div className='card-header'>
                 <img src='https://avatars.githubusercontent.com/u/53240060?s=460&u=1b76a884bd6514d9c0d3eb42976bb9bc820b7ca1&v=4' alt='Foto de perfil' />
-                <h2>Perfil do Usuário</h2>
+                <h2>{user.name}</h2>
             </div>
             <div className='card-photo'>
                 <img 
@@ -24,7 +24,7 @@ function FeedCard({ picture, description, likes }) {
                     }
                 </div>
                 <div className='card-info'>
-                    <p><a href='/feed' >Nome do Usuário</a> {description}</p>
+                    <p><a href='/feed' >{user.name}</a> {description}</p>
                 </div>
             </div>
         </div>
