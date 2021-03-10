@@ -7,13 +7,13 @@ function BottonNav() {
         <footer>
             <nav>
                 <Link to='/feed'>
-                    <MdHome seze={20} />
+                    <MdHome size={20} />
                 </Link>
                 <Link to='/post'>
-                    <MdPhotoCamera seze={20} />
+                    <MdPhotoCamera size={20} />
                 </Link>
                 <Link to='/profile'>
-                    <MdPerson seze={20} />
+                    <MdPerson size={20} />
                 </Link>
             </nav>
         </footer>

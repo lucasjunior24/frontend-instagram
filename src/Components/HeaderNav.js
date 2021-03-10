@@ -1,17 +1,25 @@
 import React from 'react'
+
+import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { MdExitToApp } from 'react-icons/md'
 
 import LogoInstagram from '../Assets/logo.png'
 
 function HeaderNav() {
+
+    const history = useHistory()
+
+    function logoutHandler() {
+        localStorage.clear()
+        history.push('/')
+    }
+
     return (
         <header>
             <nav>
                 <img src={LogoInstagram} alt='Logo do Instagram'/>
-                <Link to='/' size={50}>
-                    <MdExitToApp />
-                </Link>
+                <MdExitToApp size={20} onClick={logoutHandler} />
             </nav>
         </header>
     )
