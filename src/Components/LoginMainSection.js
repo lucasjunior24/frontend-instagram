@@ -1,11 +1,28 @@
 import React, { useState }from 'react'
+
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
+
+import api from '../Services/api'
 
 function MainSection() {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    async function loginHandle(e) {
+        e.preventDefault()
+        alert('Foi clicado')
+        try { 
+            const response = await api.post('login', {
+                username, 
+                password
+            })
+            console.log(response)
+        } catch(err) {
+            alert('Erro ao fazer login')
+        }
+    }
 
     return (
         <main>
@@ -27,7 +44,7 @@ function MainSection() {
                             typeId='password' 
                             title='Senha' />
                     </fieldset>
-                    <button>Conectar</button>
+                    <button onClick={loginHandle}>Conectar</button>
                 </form>
             </div>
         </main>

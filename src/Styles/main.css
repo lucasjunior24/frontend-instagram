@@ -233,9 +233,11 @@ h1.loading-feed {
     align-items: center;
 }
 .card-container .card-header img {
-    max-height: 2.5em;
+    height: 2.5em;
+    width: 2.5;
     border-radius: 1.25em;
     margin-right: 1em;
+    object-fit: cover;
 }
 .card-container .card-header h2 {
     font-size: 1em;

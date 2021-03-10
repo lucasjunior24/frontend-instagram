@@ -7,7 +7,9 @@ function FeedCard({ picture, description, likes, user }) {
     return (
         <div className='card-container'>
             <div className='card-header'>
-                <img src='https://avatars.githubusercontent.com/u/53240060?s=460&u=1b76a884bd6514d9c0d3eb42976bb9bc820b7ca1&v=4' alt='Foto de perfil' />
+                <img 
+                    src={user.avatar} 
+                   />
                 <h2>{user.name}</h2>
             </div>
             <div className='card-photo'>
