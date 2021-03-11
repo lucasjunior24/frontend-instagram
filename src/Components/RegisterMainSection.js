@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+
+import { useHistory } from 'react-router-dom'
+
 import api from '../Services/api'
 
 import HeroImg from '../Assets/hero-img.png'
@@ -6,6 +9,8 @@ import InputStandart from './InputStandart'
 
 function RegisterMainSection() {
     const [show, setShow] = useState(1)
+
+    const history = useHistory()
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -28,17 +33,18 @@ function RegisterMainSection() {
         e.preventDefault()
         setLoading(true)
         try { 
-            await api.post('users', {
+            const response = await api.post('users', {
                 username, password, name, description, site, avatar
             })
             alert('Usuário cadastrado com sucesso!')
-            setLoading(false)
-            setUsername('')
-            setPassword('')
-            setName('')
-            setDescription('')
-            setSite('')
-            setAvatar('')
+            const { data } = response
+            const userId = data.data._id
+            const userName = data.data.username
+
+            localStorage.setItem('InstagramUserId', userId)
+            localStorage.setItem('InstagramUserName', userName)
+
+            history.push('/feed')
          } catch(err) {
             alert('Erro ao tentar cadastrar o usuário, tente novamente|')
             setLoading(false)

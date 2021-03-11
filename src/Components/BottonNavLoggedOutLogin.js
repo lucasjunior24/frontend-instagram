@@ -7,7 +7,7 @@ function BottonNavLoggedOutLogin() {
             <nav>
                 <div>
                     <p>Já possuo uma conta</p>
-                    <Link to='/register'>Entrar!</Link>
+                    <Link to='/'>Entrar!</Link>
                 </div>
             </nav>
         </footer>
