@@ -45,10 +45,10 @@ header nav img {
     max-height: 110%;
 }
 
-header nav a {
+header svg {
     color: #333;
 }
-header nav a:hover {
+header svg:hover {
     color: #ccc;
 }
 .nav-loggedout {

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useHistory } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 import { MdExitToApp } from 'react-icons/md'
 
 import LogoInstagram from '../Assets/logo.png'
