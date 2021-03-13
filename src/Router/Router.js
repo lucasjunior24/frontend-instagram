@@ -25,16 +25,18 @@ function Router() {
                     { userId ? <Redirect to='/feed' /> : <Login updateUserId={updateUserId} /> }
                 </Route>
                 <Route path='/register' >
-                    { userId ? <Redirect to='/feed' /> : <Register /> }
+                    { userId ? <Redirect to='/feed' /> : <Register updateUserId={updateUserId} /> }
                 </Route>
                 <Route path='/feed' >
                     { userId ? <Feed clearUserId={clearUserId}  /> : <Redirect to='/'/> }
                 </Route>
                 <Route path='/post' >
-                    <Post />
+                    { userId ? <Post clearUserId={clearUserId}  /> : <Redirect to='/'/> }
+                
                 </Route>
                 <Route path='/profile' >
-                    <Profile />
+                    { userId ? <Profile clearUserId={clearUserId}  /> : <Redirect to='/'/> }
+                    
                 </Route>
             </Switch>
         </BrowserRouter>

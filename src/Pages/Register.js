@@ -3,11 +3,11 @@ import BottonNavLoggedOutLogin from '../Components/BottonNavLoggedOutLogin'
 import HeaderNavLoggedOf from '../Components/HeaderNavLoggedOf'
 import RegisterMainSection from '../Components/RegisterMainSection'
 
-function Register() {
+function Register({ updateUserId }) {
     return (
         <>
             <HeaderNavLoggedOf />
-            <RegisterMainSection />
+            <RegisterMainSection updateUserId={updateUserId} />
             <BottonNavLoggedOutLogin />
         </>
     )

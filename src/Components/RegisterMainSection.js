@@ -8,7 +8,7 @@ import login from '../Utils/login'
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
 
-function RegisterMainSection() {
+function RegisterMainSection({ updateUserId }) {
     const [show, setShow] = useState(1)
 
     const history = useHistory()
@@ -40,6 +40,9 @@ function RegisterMainSection() {
             alert('Usuário cadastrado com sucesso!')
             
             login(response)
+
+            const { data } = response
+            updateUserId(data.data._id)
 
             history.push('/feed')
          } catch(err) {

@@ -29,9 +29,7 @@ function MainSection({ updateUserId }) {
             login(response)
 
             const { data } = response
-
             updateUserId(data.data._id)
-
 
             history.push('/feed')
 
