@@ -8,16 +8,21 @@ import Post from '../Pages/Post'
 import Profile from '../Pages/Profile'
 
 function Router() {
-    const [userId, setUserId] = useState(localStorage.getItem('InstagramUserId'))
+    const [userId, setUserID] = useState(localStorage.getItem('InstagramUserId'))
     console.log(userId)
+
+    function updateUserId(user) {
+        setUserID(user)
+    }
+
     return (
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact>
-                    <Login />
+                    { userId ? <Redirect to='/feed' /> : <Login updateUserId={updateUserId} /> }
                 </Route>
                 <Route path='/register' >
-                    <Register />
+                    { userId ? <Redirect to='/feed' /> : <Register /> }
                 </Route>
                 <Route path='/feed' >
                     { userId ? <Feed /> : <Redirect to='/' /> }

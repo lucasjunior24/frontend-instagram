@@ -8,7 +8,7 @@ import InputStandart from './InputStandart'
 import api from '../Services/api'
 import login from '../Utils/login'
 
-function MainSection() {
+function MainSection({ updateUserId }) {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -25,8 +25,13 @@ function MainSection() {
                 username, 
                 password
             })
-            alert('Login feito com Sucesso!')
+
             login(response)
+
+            const { data } = response
+
+            updateUserId(data.data._id)
+
 
             history.push('/feed')
 
