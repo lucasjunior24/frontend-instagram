@@ -14,6 +14,9 @@ function Router() {
     function updateUserId(user) {
         setUserID(user)
     }
+    function clearUserId() {
+        setUserID(null)
+    }
 
     return (
         <BrowserRouter>
@@ -25,7 +28,7 @@ function Router() {
                     { userId ? <Redirect to='/feed' /> : <Register /> }
                 </Route>
                 <Route path='/feed' >
-                    { userId ? <Feed /> : <Redirect to='/' /> }
+                    { userId ? <Feed clearUserId={clearUserId}  /> : <Redirect to='/'/> }
                 </Route>
                 <Route path='/post' >
                     <Post />

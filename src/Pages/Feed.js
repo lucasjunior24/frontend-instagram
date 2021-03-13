@@ -3,10 +3,10 @@ import React from 'react'
 import BottonNav from '../Components/BottonNav'
 import HeaderNav from '../Components/HeaderNav'
 import FeedContainer from '../Components/FeedContainer'
-function Feed() {
+function Feed({ clearUserId }) {
     return (
         <>
-            <HeaderNav />
+            <HeaderNav clearUserId={clearUserId} />
             <FeedContainer />
             <BottonNav />
         </>

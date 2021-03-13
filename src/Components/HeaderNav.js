@@ -1,18 +1,14 @@
 import React from 'react'
 
-import { useHistory } from 'react-router-dom'
-
 import { MdExitToApp } from 'react-icons/md'
 
 import LogoInstagram from '../Assets/logo.png'
 
-function HeaderNav() {
-
-    const history = useHistory()
+function HeaderNav({ clearUserId }) {
 
     function logoutHandler() {
+        clearUserId()
         localStorage.clear()
-        history.push('/')
     }
 
     return (
