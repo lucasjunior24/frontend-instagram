@@ -6,6 +6,7 @@ import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
 
 import api from '../Services/api'
+import login from '../Utils/login'
 
 function MainSection() {
 
@@ -24,13 +25,8 @@ function MainSection() {
                 username, 
                 password
             })
-            const { data } = response.data
-
-            const userId = data._id
-            const userName = data.username
-
-            localStorage.setItem('InstagramUserId', userId)
-            localStorage.setItem('InstagramUserName', userName)
+            alert('Login feito com Sucesso!')
+            login(response)
 
             history.push('/feed')
 

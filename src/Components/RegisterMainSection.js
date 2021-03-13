@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import api from '../Services/api'
+import login from '../Utils/login'
 
 import HeroImg from '../Assets/hero-img.png'
 import InputStandart from './InputStandart'
@@ -37,12 +38,8 @@ function RegisterMainSection() {
                 username, password, name, description, site, avatar
             })
             alert('Usuário cadastrado com sucesso!')
-            const { data } = response
-            const userId = data.data._id
-            const userName = data.data.username
-
-            localStorage.setItem('InstagramUserId', userId)
-            localStorage.setItem('InstagramUserName', userName)
+            
+            login(response)
 
             history.push('/feed')
          } catch(err) {
