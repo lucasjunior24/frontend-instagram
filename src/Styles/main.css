@@ -263,6 +263,7 @@ h1.loading-feed {
 .card-container .card-footer .card-metadata img {
     max-height: 1.5em;
     margin-right: 0.5em;
+    cursor: pointer;
 }
 .card-container .card-footer .card-metadata h2 {
     font-size: 1em;
