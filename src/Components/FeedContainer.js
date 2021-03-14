@@ -26,6 +26,7 @@ function FeedContainer() {
             {allPosts && allPosts.map(post => (
                 <FeedCard 
                     key={post._id} 
+                    id={post._id}
                     picture={post.picture} 
                     description={post.description}
                     likes={post.likes}
