@@ -6,6 +6,12 @@ import FeedCard from './FeedCard'
 
 function FeedContainer() {
     const [allPosts, setAllPosts] = useState(null)
+    const [postInteraction, setPostInteraction] = useState(false)
+
+    function interaction() {
+        setPostInteraction(!postInteraction)
+    }
+
     useEffect(() => {
         async function getAllPosts() {
             try {
@@ -17,7 +23,7 @@ function FeedContainer() {
             }
         }
         getAllPosts()
-    },[])
+    },[postInteraction])
 
     
     return (
@@ -31,6 +37,7 @@ function FeedContainer() {
                     description={post.description}
                     likes={post.likes}
                     user={post.user}
+                    interaction={interaction}
                     />
             ))}
            

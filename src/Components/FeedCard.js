@@ -5,7 +5,7 @@ import api from '../Services/api'
 import FillHeart from '../Assets/heart-red.svg'
 import OutHeart from '../Assets/heart.svg'
 
-function FeedCard({ picture, description, likes, user, id }) {
+function FeedCard({ picture, description, likes, user, id, interaction }) {
     const [userId] = useState(localStorage.getItem('InstagramUserId'))
     
     async function likeAPost() {
@@ -16,6 +16,7 @@ function FeedCard({ picture, description, likes, user, id }) {
                     user_id: userId
                 }
             })
+            interaction()
             alert('gostou')
         } catch(err) {
             alert('Nãp foi possivel dar like')
@@ -29,7 +30,8 @@ function FeedCard({ picture, description, likes, user, id }) {
                     user_id: userId
                 }
             })
-        alert('deslike')
+            interaction()
+            alert('deslike')
         } catch(err) {
             alert('Nãp foi possivel dar deslike')
         }
