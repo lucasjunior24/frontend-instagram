@@ -21,6 +21,19 @@ function FeedCard({ picture, description, likes, user, id }) {
             alert('Nãp foi possivel dar like')
         }
     } 
+    async function unlikeAPost() {
+
+        try {
+            await api.post(`posts/${id}/dislike`, null, {
+                headers: {
+                    user_id: userId
+                }
+            })
+        alert('deslike')
+        } catch(err) {
+            alert('Nãp foi possivel dar deslike')
+        }
+    }
 
     return (
         <div className='card-container'>
@@ -38,7 +51,11 @@ function FeedCard({ picture, description, likes, user, id }) {
             <div className='card-footer'>
                 <div className='card-metadata'>
                     {likes.includes(userId) ? 
-                        <img src={FillHeart} alt='Likes' /> : 
+                        <img 
+                            src={FillHeart} 
+                            alt='Likes'
+                            onClick={() => {unlikeAPost()}} 
+                        /> : 
                         <img 
                             src={OutHeart} 
                             alt='Likes'
