@@ -333,6 +333,18 @@ h1.loading-feed {
 }
 
 
+.profile-container .profile-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+.profile-container .profile-pics .profil-pic {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+
 @media (max-width: 600px) {
     main  {
         margin-bottom: 15em;
