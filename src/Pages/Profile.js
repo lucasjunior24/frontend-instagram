@@ -1,12 +1,13 @@
 import React from 'react'
 import BottonNav from '../Components/BottonNav'
 import HeaderNav from '../Components/HeaderNav'
+import ProfileContainer from '../Components/ProfileContainer'
 
-function Profile() {
+function Profile({ cleanUserId }) {
     return (
         <>
-            <HeaderNav />
-            <h1>Profile</h1>
+            <HeaderNav cleanUserId={cleanUserId} />
+            <ProfileContainer />
             <BottonNav />
         </>
     )
