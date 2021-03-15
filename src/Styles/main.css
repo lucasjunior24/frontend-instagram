@@ -290,13 +290,20 @@ h1.loading-feed {
 }
 .profile-container .profile-header {
     max-width: 1000px;
-    background: blue;
     width: 80%;
     min-height: 20vh;
-
+    padding: 2em 0;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+.profile-container .profile-header img {
+    height: 150px;
+
+    justify-self: flex-start;
+    align-self: center;
+
+    border-radius: 75px;
 }
 
 
