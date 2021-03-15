@@ -7,7 +7,7 @@ function ProfileContainer() {
     return (
         <main className='profile-container'>
             <ProfileHeader />
-            <ProfileFeed />
+           
         </main>
     )
 }
