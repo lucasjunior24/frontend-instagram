@@ -8,7 +8,7 @@ function ProfileHeader() {
                 <h1>USERNAME</h1>
                 <h2>Nome do usuairo</h2>
                 <p>Descricao do usuario</p>
-                <p>Site</p>
+                <a href=''>Site</a>
             </div>
         </div>
     )
