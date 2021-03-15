@@ -282,7 +282,22 @@ h1.loading-feed {
     margin-right: 0.5em;
 }
 
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+.profile-container .profile-header {
+    max-width: 1000px;
+    background: blue;
+    width: 80%;
+    min-height: 20vh;
 
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
 
 

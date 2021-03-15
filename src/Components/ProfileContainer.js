@@ -5,7 +5,7 @@ import ProfileHeader from './ProfileHeader'
 
 function ProfileContainer() {
     return (
-        <main>
+        <main className='profile-container'>
             <ProfileHeader />
             <ProfileFeed />
         </main>
