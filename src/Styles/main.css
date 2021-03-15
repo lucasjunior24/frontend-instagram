@@ -291,7 +291,7 @@ h1.loading-feed {
 .profile-container .profile-header {
     max-width: 1000px;
     width: 80%;
-    min-height: 20vh;
+    min-height: 50vh;
     padding: 2em 0;
 
     display: grid;
@@ -349,6 +349,16 @@ h1.loading-feed {
     object-fit: cover;
 }
 
+@media (max-width: 900px) {
+    .profile-container .profile-pics .profile-pic {
+        max-height: 270px;
+    }
+    .profile-container .profile-pics {
+        grid-gap: 1em;
+    }
+    
+}
+
 
 @media (max-width: 600px) {
     main  {
@@ -374,6 +384,12 @@ h1.loading-feed {
     .profile-container .profile-header .profile-user-info h1 {
         font-size: 1.5em;
         align-self: center;
+    }
+    .profile-container .profile-pics .profile-pic {
+        max-height: 210px;
+    }
+    .profile-container .profile-pics {
+        grid-gap: .5em;
     }
     
 }
