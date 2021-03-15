@@ -338,10 +338,15 @@ h1.loading-feed {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
 }
-.profile-container .profile-pics .profil-pic {
+.profile-container .profile-pics .profile-pic {
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
+}
+.profile-container .profile-pics .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
