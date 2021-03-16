@@ -291,7 +291,7 @@ h1.loading-feed {
 .profile-container .profile-header {
     max-width: 1000px;
     width: 80%;
-    min-height: 50vh;
+    min-height: 36vh;
     padding: 2em 0;
 
     display: grid;
@@ -300,11 +300,13 @@ h1.loading-feed {
 }
 .profile-container .profile-header img {
     height: 150px;
+    width: 150px;
 
     justify-self: center;
     align-self: center;
 
     border-radius: 75px;
+    object-fit: cover;
 }
 .profile-container .profile-header .profile-user-info {
     display: flex;
@@ -337,11 +339,14 @@ h1.loading-feed {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
+
+    margin-bottom: 15vh;
 }
 .profile-container .profile-pics .profile-pic {
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
+
 }
 .profile-container .profile-pics .profile-pic img {
     width: 100%;
@@ -376,9 +381,11 @@ h1.loading-feed {
     }
     .profile-container .profile-header {
         grid-template-columns: 1fr;
+        min-height: 46vh;
     }
     .profile-container .profile-header img {
-        height: 0.5*150px;
+        height: 110px;
+        width: 110px;
         border-radius: 0.5*75px;
     }
     .profile-container .profile-header .profile-user-info h1 {
