@@ -10,15 +10,19 @@ import ProfileHeader from './ProfileHeader'
 function ProfileContainer() {
     const [userId] = useState(localStorage.getItem('InstagramUserId'))
     const [userInformations, setUserInformations] = useState({})
+    const [userPosts, setUserPosts] = useState([])
     
     useEffect(() => {
         async function getProfileInfo() {
-            console.log('oi')
             try {
                 const profileInfo = await api.get(`users/${userId}`)
                 const { data } = profileInfo
+
                 const userInfo = data.userInfo  
                 setUserInformations(userInfo)
+
+                const userPosts = data.userPost
+                setUserPosts(userPosts)
             } catch(err) {
                 alert('Erro ao carregar os dados')
             }
@@ -35,7 +39,9 @@ function ProfileContainer() {
                 site={userInformations.site}
                 avatar={userInformations.avatar}
             />
-            <ProfileFeed />
+            <ProfileFeed 
+                userposts={userPosts}
+            />
         </main>
     )
 }

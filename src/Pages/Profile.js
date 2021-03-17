@@ -3,10 +3,10 @@ import BottonNav from '../Components/BottonNav'
 import HeaderNav from '../Components/HeaderNav'
 import ProfileContainer from '../Components/ProfileContainer'
 
-function Profile({ cleanUserId }) {
+function Profile({ clearUserId }) {
     return (
         <>
-            <HeaderNav cleanUserId={cleanUserId} />
+            <HeaderNav clearUserId={clearUserId} />
             <ProfileContainer />
             <BottonNav />
         </>
