@@ -88,7 +88,64 @@ button:hover {
     width: 100%;
     object-fit: cover;
 }
+.post-container form {
+    border: solid 1px #ccc;
+    align-self: center;
+    background: white;
+    justify-content: center;
 
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-container form h1 {
+    font-size: 1.5em;
+    width: 80%;
+}
+.post-container form fieldset {
+    width: 80%;
+    border: none;
+    padding: 1em 0;
+}
+.post-container form .form-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-gap: 1em;
+    width: 80%;
+} 
+.post-container .form-navigation button {
+    width: 100%;
+    background: #ccc;
+}
+.post-container form .form-navigation button.submit {
+    background: #0095f6;
+}
+.post-container form fieldset .input-field {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+
+    height: 3em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+.post-container form fieldset .input-field label {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 0.75em;
+}
+.post-container fieldset .input-field input {
+    border: none;
+    width: 100%;
+    margin-top: 0.5em;
+    
+    font-size: 1em;
+}
+.post-container form button {
+    width: 80%;
+}
 main {
     width: 100%;
     height: 80vh;
