@@ -70,6 +70,25 @@ button:hover {
     background: #3aa5ec;
 }
 
+.post-container {
+    width: 80%;
+    max-width: 1000px;
+
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+}
+
+.post-container img {
+    align-self: center;
+    justify-self: flex-end;
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 main {
     width: 100%;
     height: 80vh;
