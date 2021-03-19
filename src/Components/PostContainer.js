@@ -3,7 +3,9 @@ import { useHistory } from 'react-router-dom'
 
 import api from '../Services/api' 
 
+import DefaultImg from '../Assets/default.png'
 import InputStandart from '../Components/InputStandart'
+// var i = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqYK1vaUn1zL0u2KEmCwTy5tfc29oGiCEpk54Gvflb3ZFrXNpSYm1EEiJUrNm75iiMrqM&usqp=CAU'
 
 function PostContainer() {
     const [userId] = useState(localStorage.getItem('InstagramUserId'))
@@ -33,7 +35,11 @@ function PostContainer() {
     
     return (
         <main className='post-container'>
-            <img src='https://th.bing.com/th/id/OIP.EZrn_SyHP3i578RpQLWXSQHaFj?pid=ImgDet&rs=1' alt='' />
+           
+            {picture ? 
+                <img src={picture} alt={description} /> :
+                <img src={DefaultImg} alt="Insira uma imagem" />
+            }
             <form>
                 <h1>Postar nova Foto</h1>
                 <fieldset>
