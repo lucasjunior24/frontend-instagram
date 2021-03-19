@@ -9,7 +9,6 @@ import Profile from '../Pages/Profile'
 
 function Router() {
     const [userId, setUserID] = useState(localStorage.getItem('InstagramUserId'))
-    console.log(userId)
 
     function updateUserId(user) {
         setUserID(user)
