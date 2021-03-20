@@ -295,11 +295,11 @@ h1.loading-feed {
 }
 .card-container {
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     background: white;
     border: solid 1px #ccc;
     border-radius: 5px;
-    margin: 0 2em 3em;
+    margin-top: 1em;
 }
 .card-container .card-header {
     padding: 1.5em;
@@ -429,6 +429,19 @@ h1.loading-feed {
     height: 100%;
     object-fit: cover;
 }
+
+.feed-container {
+    max-width: 1000px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+
 @media (max-width: 1000px) {
     .post-container {
         grid-template-columns: 1fr;

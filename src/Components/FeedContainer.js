@@ -27,7 +27,7 @@ function FeedContainer() {
 
     
     return (
-        <>  
+        <div className='feed-container'>  
             {allPosts === null && <h1 className='loading-feed'>Carregando...</h1> }
             {allPosts && allPosts.map(post => (
                 <FeedCard 
@@ -41,7 +41,7 @@ function FeedContainer() {
                     />
             ))}
            
-        </>
+        </ div>
         
     )
 }
