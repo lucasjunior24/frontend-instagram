@@ -5,7 +5,6 @@ import api from '../Services/api'
 
 import DefaultImg from '../Assets/default.png'
 import InputStandart from '../Components/InputStandart'
-// var i = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqYK1vaUn1zL0u2KEmCwTy5tfc29oGiCEpk54Gvflb3ZFrXNpSYm1EEiJUrNm75iiMrqM&usqp=CAU'
 
 function PostContainer() {
     const [userId] = useState(localStorage.getItem('InstagramUserId'))

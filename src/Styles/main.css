@@ -435,7 +435,7 @@ h1.loading-feed {
         grid-template-rows: 4fr 2fr;
     }    
     .post-container form {
-        max-width: 400px;
+        max-width: 500px;
         margin: 0 auto auto;
 
     }

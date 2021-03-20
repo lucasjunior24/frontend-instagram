@@ -17,7 +17,7 @@ function FeedContainer() {
             try {
                 const loadedPosts = await api.get('posts')
                 const { data } = loadedPosts
-                setAllPosts(data.data)
+                setAllPosts(data.data.reverse())
             } catch(err) {
                 alert('Não foi possivel carregar os posts!')
             }
