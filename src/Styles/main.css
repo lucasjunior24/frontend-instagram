@@ -31,6 +31,7 @@ header {
     align-items: center;
     
     background: white;
+    position: fixed;
 }
 header nav {
 
@@ -74,10 +75,11 @@ button:hover {
     width: 80%;
     max-width: 1000px;
 
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1em;
+
+    margin-top: 10vh;
 }
 
 .post-container img {
@@ -362,7 +364,8 @@ h1.loading-feed {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center; */
+    margin-top: 8vh;
+    margin-bottom: 38vh;
 }
 .profile-container .profile-header {
     max-width: 1000px;
@@ -437,6 +440,7 @@ h1.loading-feed {
     display: flex;
     flex-direction: column;
 
+    margin-top: 10vh;
     justify-content: center;
     margin-bottom: 15vh;
 }
@@ -446,15 +450,20 @@ h1.loading-feed {
     .post-container {
         grid-template-columns: 1fr;
         grid-template-rows: 4fr 2fr;
+        margin-bottom: 120vh;
     }    
     .post-container form {
         max-width: 500px;
-        margin: 0 auto auto;
+        margin: 0 auto;
+        
 
     }
     
 }
-@media (max-width: 900px) {   
+@media (max-width: 900px) {
+    .post-container {
+        margin-bottom: 100vh;
+    }   
     .profile-container .profile-pics .profile-pic {
         max-height: 270px;
     }
@@ -463,9 +472,18 @@ h1.loading-feed {
     }
     
 }
+@media (max-width: 750px) {
+    .post-container {
+        margin-bottom: 80vh;
+    }   
+
+}
 
 
 @media (max-width: 600px) {
+    .post-container {
+        margin-bottom: 60vh;
+    }
     .post-container form {
         min-height: 260px;
     }
@@ -503,10 +521,20 @@ h1.loading-feed {
     }
     
 }
+@media (max-width: 500px) {
+    .post-container {
+        margin-bottom: 40vh;
+    }   
+
+}
 
 @media (max-width: 400px) {
     main  {
         margin-bottom: 20em;
     }
+    .post-container {
+        margin-bottom: 30vh;
+    }   
+
     
 }

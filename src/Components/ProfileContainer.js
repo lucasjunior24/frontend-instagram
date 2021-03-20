@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 import api from '../Services/api'
 
-import { AiFillHeart } from 'react-icons/ai'
 
 import ProfileFeed from './ProfileFeed'
 import ProfileHeader from './ProfileHeader'
@@ -28,7 +27,7 @@ function ProfileContainer() {
             }
         }
         getProfileInfo()
-    }, [])
+    }, [userId])
 
     return (
         <main className='profile-container'>

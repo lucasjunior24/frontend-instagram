@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { AiFillHeart } from 'react-icons/ai'
-
 function ProfileFeed({ userposts }) {
     return (
         <>
@@ -17,8 +15,5 @@ function ProfileFeed({ userposts }) {
         </>
     )
 }
-{/* <div className='profile-details'>
-                        < AiFillHeart />
-                        <p>50 Likes</p>
-                    </div> */}
+
 export default ProfileFeed
