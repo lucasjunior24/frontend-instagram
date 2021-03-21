@@ -42,6 +42,7 @@ function FeedCard({ picture, description, likes, user, id, interaction }) {
             <div className='card-header'>
                 <img 
                     src={user.avatar} 
+                    alt={user.description}
                    />
                 <h2>{user.name}</h2>
             </div>

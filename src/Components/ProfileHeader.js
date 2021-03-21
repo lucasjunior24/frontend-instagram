@@ -8,7 +8,7 @@ function ProfileHeader({username, name, description, site, avatar }) {
                 <h1>{username}</h1>
                 <h2>{name}</h2>
                 <p>{description}</p>
-                <a href=''>{site}</a>
+                <a href='www.google.com'>{site}</a>
             </div>
         </div>
     )
